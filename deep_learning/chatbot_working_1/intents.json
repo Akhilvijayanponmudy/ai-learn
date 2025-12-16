@@ -1,0 +1,352 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "How are you?",
+        "Is anyone there?",
+        "Yo",
+        "Hi chatbot",
+        "Hello bot"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Hey! Good to see you.",
+        "Hi! How may I assist you?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Talk to you soon",
+        "Catch you later",
+        "I have to go"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care.",
+        "Bye! Come back anytime.",
+        "It was nice chatting with you."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thanks a lot",
+        "Thank you so much",
+        "That's helpful",
+        "Appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!",
+        "Glad I could assist."
+      ]
+    },
+
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?",
+        "Who are you?",
+        "Tell me your name",
+        "Do you have a name?"
+      ],
+      "responses": [
+        "I am your AI chatbot assistant.",
+        "You can call me Chatbot.",
+        "I’m Chatbot, here to help you."
+      ]
+    },
+
+    {
+      "tag": "creator",
+      "patterns": [
+        "Who created you?",
+        "Who built you?",
+        "Who made this chatbot?",
+        "Tell me about your creator"
+      ],
+      "responses": [
+        "I was created by a developer.",
+        "A programmer built me using Python and ML.",
+        "I was created for learning and fun!"
+      ]
+    },
+
+    {
+      "tag": "age",
+      "patterns": [
+        "How old are you?",
+        "What is your age?",
+        "When were you created?"
+      ],
+      "responses": [
+        "I don’t age like humans, but I'm quite new!",
+        "I was created recently and keep learning."
+      ]
+    },
+
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather today?",
+        "Tell me today's weather",
+        "Is it raining?",
+        "Weather forecast",
+        "Temperature outside"
+      ],
+      "responses": [
+        "I can't check real-time weather yet, but you can look it up quickly!",
+        "Weather info is not available right now."
+      ]
+    },
+
+    {
+      "tag": "food",
+      "patterns": [
+        "What is your favourite food?",
+        "Do you eat?",
+        "Tell me a good dish",
+        "Suggest food",
+        "Recommend a meal"
+      ],
+      "responses": [
+        "I don’t eat, but I’ve heard pizza is amazing!",
+        "Humans love biryani, right?",
+        "Try something spicy today!"
+      ]
+    },
+
+    {
+      "tag": "movies",
+      "patterns": [
+        "Suggest me a movie",
+        "Recommend movies",
+        "What movie should I watch?",
+        "Give me a movie name",
+        "Best movies?"
+      ],
+      "responses": [
+        "Inception is mind-blowing!",
+        "3 Idiots is a great movie!",
+        "Interstellar is highly recommended!",
+        "Try The Dark Knight — masterpiece!"
+      ]
+    },
+
+    {
+      "tag": "jokes",
+      "patterns": [
+        "Tell me a joke",
+        "Make me laugh",
+        "Say something funny"
+      ],
+      "responses": [
+        "Why don't programmers like nature? Too many bugs!",
+        "I tried to catch fog yesterday… Mist!",
+        "What’s a computer’s favorite snack? Microchips!"
+      ]
+    },
+
+    {
+      "tag": "music",
+      "patterns": [
+        "Suggest me songs",
+        "Recommend music",
+        "What music do you like?",
+        "Best songs?"
+      ],
+      "responses": [
+        "Try some lo-fi beats!",
+        "Listen to 'Shape of You'!",
+        "You might enjoy classical instrumental music."
+      ]
+    },
+
+    {
+      "tag": "sports",
+      "patterns": [
+        "Do you like sports?",
+        "Who will win the match?",
+        "Tell me a sport",
+        "Recommend sports"
+      ],
+      "responses": [
+        "Football is the world’s most popular sport!",
+        "Cricket is widely loved.",
+        "I can't predict match results, but watching sports is fun!"
+      ]
+    },
+
+    {
+      "tag": "health",
+      "patterns": [
+        "How to stay healthy?",
+        "Give me health tips",
+        "How can I improve my health?"
+      ],
+      "responses": [
+        "Eat well, sleep well, and exercise regularly!",
+        "Drink plenty of water and stay active."
+      ]
+    },
+
+    {
+      "tag": "motivation",
+      "patterns": [
+        "Motivate me",
+        "Give me motivation",
+        "I feel low",
+        "Cheer me up"
+      ],
+      "responses": [
+        "You are capable of amazing things!",
+        "Don’t give up — great things take time.",
+        "Believe in yourself, you’ve got this!"
+      ]
+    },
+
+    {
+      "tag": "fun_fact",
+      "patterns": [
+        "Tell me a fun fact",
+        "Give me a random fact",
+        "Say something interesting"
+      ],
+      "responses": [
+        "Bananas are berries, but strawberries aren’t!",
+        "Honey never spoils.",
+        "Octopuses have three hearts!"
+      ]
+    },
+
+    {
+      "tag": "programming",
+      "patterns": [
+        "Teach me programming",
+        "How to learn coding?",
+        "Recommend coding languages",
+        "Is Python good?",
+        "Programming tips"
+      ],
+      "responses": [
+        "Python is great for beginners!",
+        "Start with small projects and practice daily.",
+        "Coding becomes easier the more you practice!"
+      ]
+    },
+
+    {
+      "tag": "python",
+      "patterns": [
+        "What is Python?",
+        "Is Python easy?",
+        "Tell me about Python language"
+      ],
+      "responses": [
+        "Python is a powerful, beginner-friendly programming language.",
+        "Python is used in AI, ML, web development, and automation."
+      ]
+    },
+
+    {
+      "tag": "yes",
+      "patterns": [
+        "Yes",
+        "Yeah",
+        "Sure",
+        "Of course",
+        "Why not"
+      ],
+      "responses": [
+        "Great!",
+        "Awesome!",
+        "Sounds good!"
+      ]
+    },
+
+    {
+      "tag": "no",
+      "patterns": [
+        "No",
+        "Nope",
+        "Not really",
+        "I don't think so"
+      ],
+      "responses": [
+        "Okay, no problem!",
+        "Alright, let me know if you need something else."
+      ]
+    },
+
+    {
+      "tag": "hobby",
+      "patterns": [
+        "Tell me a hobby",
+        "Suggest hobbies",
+        "What hobbies do you like?"
+      ],
+      "responses": [
+        "Reading is a great hobby!",
+        "You can try painting, coding, or music!",
+        "Exploring new things is a wonderful hobby."
+      ]
+    },
+
+    {
+      "tag": "time",
+      "patterns": [
+        "What time is it?",
+        "Tell me the time",
+        "Current time?"
+      ],
+      "responses": [
+        "I cannot check real-time clock yet!",
+        "You can check the time on your device."
+      ]
+    },
+
+    {
+      "tag": "love",
+      "patterns": [
+        "What is love?",
+        "Do you know about love?",
+        "Tell me something romantic"
+      ],
+      "responses": [
+        "Love is a beautiful feeling, humans say!",
+        "Love makes life meaningful.",
+        "Even chatbots know love is special!"
+      ]
+    },
+
+    {
+      "tag": "social",
+      "patterns": [
+        "Give me your social media",
+        "Where can I follow you?",
+        "Do you have Instagram?",
+        "Give me your links"
+      ],
+      "responses": [
+        "You can follow the developer on GitHub or LinkedIn!",
+        "No social media for me yet 😄"
+      ]
+    }
+  ]
+}

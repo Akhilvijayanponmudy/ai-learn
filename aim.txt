@@ -1,0 +1,118 @@
+Roadmap (8 weeks, project-first)
+Week 1: Foundations you’ll actually use
+
+Python for ML: numpy, pandas basics
+
+Text preprocessing + vectorization
+
+Metrics: accuracy, precision/recall, F1, confusion matrix
+
+Deliverable: baseline text classifier (Logistic Regression + TF-IDF)
+
+Week 2: Deep learning upgrade (optional but useful)
+
+Keras/PyTorch basics, embeddings, overfitting, dropout
+
+Deliverable: small neural classifier + compare to baseline
+
+Week 3: Search system (non-LLM)
+
+Build embedding search: chunking, embedding generation, cosine similarity
+
+Use a vector DB (FAISS locally first)
+
+Deliverable: semantic search over docs
+
+Weeks 4–5: RAG system (LLM + retrieval)
+
+RAG pipeline: ingest → chunk → embed → retrieve → prompt → answer with citations
+
+Hallucination control: “answer only from context”, refusal behavior
+
+Deliverable: RAG bot that answers from your docs
+
+Week 6: Evaluation (accuracy for classifier + RAG eval)
+
+Classifier: F1, ROC-AUC, calibration, threshold tuning
+
+RAG: retrieval metrics (Recall@k), answer metrics (faithfulness, groundedness)
+
+Create a tiny eval set (50–200 Q/A)
+
+Deliverable: eval script + report (before/after)
+
+Week 7: Deploy with FastAPI
+
+Endpoints:
+
+/classify
+
+/search
+
+/rag
+
+/health
+
+Request/response schemas, input validation, rate limits
+
+Deliverable: FastAPI service
+
+Week 8: Docker + logging/monitoring + iteration
+
+Dockerfile, docker-compose, env vars
+
+Logging: structured JSON logs, request ids
+
+Monitoring: Prometheus metrics + Grafana dashboards (or simpler: logs + basic metrics)
+
+Feedback loop: capture queries + outcomes → improve chunking/prompt/retrieval
+
+Deliverable: deployable stack + iteration plan
+
+One “capstone” project (do this and you’ll have everything)
+
+Build: “Support Assistant for Documentation”
+
+Data: your own docs / plugin docs / README files / exported FAQs
+
+Features:
+
+classify query (bug / how-to / billing / feature request)
+
+search relevant docs
+
+RAG answer with citations
+
+log every request + retrieved chunks + latency + user feedback flag
+
+This single project hits all your requirements.
+
+Tech stack I recommend (simple + real-world)
+
+Embeddings: sentence-transformers or OpenAI embeddings (start local, then API)
+
+Vector store: FAISS (local) → later Qdrant/Weaviate
+
+LLM: OpenAI API or local (Ollama) depending on your machine
+
+Backend: FastAPI
+
+Docker: Docker + docker-compose
+
+Logging: Python logging + JSON formatter
+
+Metrics: prometheus-client (fast win)
+
+What I can do next (pick one and I’ll give full code)
+
+Starter template repo structure (folders + files + Docker + compose)
+
+Classifier API (TF-IDF baseline + metrics + endpoint)
+
+Search API (FAISS + embeddings + ingest pipeline)
+
+RAG API (retrieve + prompt + citations + eval)
+
+Logging/Monitoring bundle (structured logs + Prometheus + Grafana)
+
+If you say: “Start with #1”, I’ll paste a complete working template (with commands to run) you can use immediately on your Mac with Docker.
