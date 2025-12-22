@@ -33,38 +33,30 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
 
-print("-----------------------------")
-print(X_train)
-print("-----------------------------")
-print(y_train)
-print("-----------------------------")
-print(X_test)
-print("-----------------------------")
-print(y_test)
-print("-----------------------------")
+
+# -----------------------------
+# 4) TF-IDF Vectorization
+# -----------------------------
+vectorizer = TfidfVectorizer(
+    max_features=5000,
+    stop_words="english"
+)
+
+X_train_vec = vectorizer.fit_transform(X_train)
+X_test_vec = vectorizer.transform(X_test)
 
 
-# # -----------------------------
-# # 4) TF-IDF Vectorization
-# # -----------------------------
-# vectorizer = TfidfVectorizer(
-#     max_features=5000,
-#     stop_words="english"
-# )
+# -----------------------------
+# 5) Logistic Regression
+# -----------------------------
+model = LogisticRegression(max_iter=1000)
+model.fit(X_train_vec, y_train)
 
-# X_train_vec = vectorizer.fit_transform(X_train)
-# X_test_vec = vectorizer.transform(X_test)
+print("Training complete")
 
-# # -----------------------------
-# # 5) Logistic Regression
-# # -----------------------------
-# model = LogisticRegression(max_iter=1000)
-# model.fit(X_train_vec, y_train)
+# Save artifacts
+import joblib
+joblib.dump(model, "model.pkl")
+joblib.dump(vectorizer, "vectorizer.pkl")
+print("Saved model and vectorizer")
 
-# print("Training complete")
-
-# # Save artifacts
-# import joblib
-# joblib.dump(model, "model.pkl")
-# joblib.dump(vectorizer, "vectorizer.pkl")
-# print("Saved model and vectorizer")
