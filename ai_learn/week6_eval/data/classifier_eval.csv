@@ -1,0 +1,6 @@
+id,y_true,y_prob,split,notes
+c1,1,0.91,eval,"clear positive"
+c2,0,0.12,eval,"clear negative"
+c3,1,0.62,eval,"borderline"
+c4,0,0.48,eval,"hard negative"
+c5,1,0.35,eval,"hard positive"

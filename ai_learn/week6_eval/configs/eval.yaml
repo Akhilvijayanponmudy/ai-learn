@@ -1,0 +1,28 @@
+project_name: week6_eval
+outputs_dir: outputs
+
+classifier:
+  label_col: y_true
+  prob_col: y_prob
+  id_col: id
+  # Threshold tuning objective: "f1" or "youden" (maximizes TPR - FPR)
+  tune_objective: f1
+  threshold_grid:
+    start: 0.05
+    stop: 0.95
+    step: 0.01
+  calibration_bins: 10
+
+rag:
+  # k values for retrieval metrics
+  ks: [1, 3, 5, 10]
+  # Answer metrics:
+  # - "exact_match", "token_f1", "fuzzy_ratio", "semantic_cosine" (optional if you later add embeddings)
+  answer_metrics: ["exact_match", "token_f1", "fuzzy_ratio"]
+  # Faithfulness / groundedness scoring mode:
+  # - "overlap" (no model needed)
+  # - "llm" (uses OpenAI-compatible API via env vars; see src/judges.py)
+  judge_mode: "overlap"
+  overlap:
+    min_ngram: 3
+    max_ngram: 5

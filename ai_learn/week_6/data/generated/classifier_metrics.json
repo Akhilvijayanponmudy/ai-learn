@@ -1,0 +1,65 @@
+{
+  "macro_f1": 1.0,
+  "weighted_f1": 1.0,
+  "roc_auc_ovr_macro": 1.0,
+  "ece": 0.23648866727716658,
+  "thresholds_ovr_best_f1": {
+    "billing": 0.15,
+    "bug": 0.15,
+    "feature_request": 0.15,
+    "how-to": 0.2
+  },
+  "thresholds_ovr_best_f1_scores": {
+    "billing": 1.0,
+    "bug": 1.0,
+    "feature_request": 1.0,
+    "how-to": 1.0
+  },
+  "classification_report": {
+    "billing": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "bug": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "feature_request": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "how-to": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 15.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 60.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 60.0
+    }
+  },
+  "n_train": 180,
+  "n_test": 60,
+  "classes": [
+    "billing",
+    "bug",
+    "feature_request",
+    "how-to"
+  ]
+}

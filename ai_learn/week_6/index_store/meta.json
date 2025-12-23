@@ -1,0 +1,27 @@
+[
+  {
+    "source": "data/docs/faq.md",
+    "chunk_id": 0,
+    "char_len": 672
+  },
+  {
+    "source": "data/docs/users_import.md",
+    "chunk_id": 0,
+    "char_len": 830
+  },
+  {
+    "source": "data/docs/README.md",
+    "chunk_id": 0,
+    "char_len": 882
+  },
+  {
+    "source": "data/docs/ftp_sftp.md",
+    "chunk_id": 0,
+    "char_len": 959
+  },
+  {
+    "source": "data/docs/orders_export.md",
+    "chunk_id": 0,
+    "char_len": 867
+  }
+]

@@ -1,0 +1,11 @@
+{"id": "rag_0000", "question": "What should I check if export is empty?", "gold_answer": "Check filters like date range/status, verify matching records exist, and try removing filters.", "gold_sources": ["faq.md"]}
+{"id": "rag_0001", "question": "Export is empty. What should I do?", "gold_answer": "Check filters like date range/status, verify matching records exist, and try removing filters.", "gold_sources": ["faq.md"]}
+{"id": "rag_0002", "question": "What are common troubleshooting steps for slow export/import?", "gold_answer": "Try smaller batches, check PHP memory limit and max execution time, and verify FTP/SFTP connectivity.", "gold_sources": ["README.md"]}
+{"id": "rag_0003", "question": "Where do I configure FTP/SFTP settings?", "gold_answer": "Go to WooCommerce → Import Export → Settings → FTP/SFTP.", "gold_sources": ["ftp_sftp.md"]}
+{"id": "rag_0007", "question": "What is the default port for SFTP?", "gold_answer": "The default port for SFTP is 22.", "gold_sources": ["ftp_sftp.md"]}
+{"id": "rag_0009", "question": "What filters are supported for orders export?", "gold_answer": "Orders export supports filters like date range, order status, payment method, customer email, and optional order total min/max.", "gold_sources": ["orders_export.md"]}
+{"id": "rag_0011", "question": "How do I configure SFTP for exports?", "gold_answer": "Configure it under WooCommerce → Import Export → Settings → FTP/SFTP.", "gold_sources": ["ftp_sftp.md"]}
+{"id": "rag_0012", "question": "Import fails with invalid CSV. What should I check?", "gold_answer": "Ensure it is comma-separated, UTF-8 encoded, and has a header row.", "gold_sources": ["faq.md"]}
+{"id": "rag_0013", "question": "How can I speed up export?", "gold_answer": "Use smaller date ranges, export in batches, and avoid expensive filters when possible.", "gold_sources": ["faq.md", "orders_export.md"]}
+{"id": "rag_0014", "question": "What to do if SFTP shows authentication failed?", "gold_answer": "Recheck username/password, confirm password login is allowed, and confirm port 22.", "gold_sources": ["ftp_sftp.md"]}
+{"id": "rag_0015", "question": "Why are line items not in separate rows?", "gold_answer": "Some exports generate one row per order; line items may be combined unless line-item mode is enabled.", "gold_sources": ["orders_export.md"]}

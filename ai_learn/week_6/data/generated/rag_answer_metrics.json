@@ -1,0 +1,10 @@
+{
+  "n": 11,
+  "citation_coverage_avg": 0.6136363636363636,
+  "context_overlap_avg": 0.28362042063430887,
+  "notes": [
+    "citation_coverage is a groundedness proxy: sentences containing [C#].",
+    "context_overlap is a weak faithfulness proxy: token overlap(answer, retrieved_context).",
+    "For real evaluation, generate answers with your RAG bot and write rag_answers.jsonl."
+  ]
+}

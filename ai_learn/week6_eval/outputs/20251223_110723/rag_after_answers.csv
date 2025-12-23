@@ -1,0 +1,3 @@
+id,exact_match,token_f1,fuzzy_ratio,faithfulness,groundedness,judge_notes
+q001,1.0,1.0,1.0,0.21999999999999997,0.4,"token_cov=0.400, ngram_cov=0.143, novelty=0.600"
+q002,0.0,0.8148148148148148,0.8275862068965517,0.6206730769230768,0.8125,"token_cov=0.812, ngram_cov=0.538, novelty=0.188"
