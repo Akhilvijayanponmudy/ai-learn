@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # 1. Ingestion API (FastAPI)
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+    depends_on:
+      - rabbitmq
+
+  # 2. Message Broker (RabbitMQ)
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672" # Dashboard
+      - "5672:5672" # Protocol
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+
+  # 3. AI Worker (PyTorch Consumer)
+  worker:
+    build: ./worker
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+      - DB_HOST=postgres
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_NAME=fraud_db
+    depends_on:
+      - rabbitmq
+      - postgres
+
+  # 4. Database (PostgreSQL)
+  postgres:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=fraud_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # 5. Dashboard (Streamlit)
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      - DB_HOST=postgres
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - DB_NAME=fraud_db
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

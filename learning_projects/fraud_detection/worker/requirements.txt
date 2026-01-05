@@ -1,0 +1,4 @@
+torch
+psycopg2-binary
+pika
+numpy

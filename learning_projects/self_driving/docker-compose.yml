@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  trainer:
+    build: .
+    volumes:
+      - .:/app # Sync code and saved models
+    command: python train.py
+
+  evaluator:
+    build: .
+    volumes:
+      - .:/app
+    command: python evaluate.py
+    profiles: [ "eval" ] # Only run when explicitly requested
